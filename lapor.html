@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro-Physics of Misplacement - Lapor Barang</title>
+</head>
+<body>
+  <header>
+    <h1>Lapor Barang Hilang</h1>
+    <p>Catat detail barang agar pencarian lebih terarah</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="penyebab.html">Penyebab</a></li>
+        <li><a href="strategi.html">Strategi Pencarian</a></li>
+        <li><a href="lapor.html">Lapor Barang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulir Pelaporan</h2>
+      <p>Isi data berikut selengkap mungkin. Lihat <a href="strategi.html">strategi pencarian</a> bila belum mencoba mencari secara sistematis.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Data Pelapor</legend>
+          <p>
+            <label for="nama">Nama Pelapor:</label>
+            <input type="text" id="nama" name="nama" required>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detail Barang</legend>
+          <p>
+            <label for="barang">Nama Barang:</label>
+            <input type="text" id="barang" name="barang" required>
+          </p>
+          <p>
+            <label for="kategori">Kategori:</label>
+            <select id="kategori" name="kategori" required>
+              <option value="">-- Pilih kategori --</option>
+              <option value="kunci">Kunci</option>
+              <option value="elektronik">Elektronik</option>
+              <option value="dokumen">Dokumen</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </p>
+          <p>
+            <label for="tanggal">Tanggal Terakhir Terlihat:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+          </p>
+          <p>
+            <label for="waktu">Perkiraan Jam:</label>
+            <input type="time" id="waktu" name="waktu">
+          </p>
+          <p>
+            <label for="ukuran">Ukuran Terpanjang (cm):</label>
+            <input type="number" id="ukuran" name="ukuran" min="1" max="200">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Lokasi Terakhir</legend>
+          <p>
+            <input type="radio" id="dalam" name="lokasi" value="dalam-ruangan" required>
+            <label for="dalam">Dalam ruangan</label>
+          </p>
+          <p>
+            <input type="radio" id="luar" name="lokasi" value="luar-ruangan">
+            <label for="luar">Luar ruangan</label>
+          </p>
+          <p>
+            <input type="radio" id="kendaraan" name="lokasi" value="kendaraan">
+            <label for="kendaraan">Di kendaraan</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="ciri">Ciri-Ciri Barang:</label><br>
+          <textarea id="ciri" name="ciri" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="sudahcari" name="sudahcari" required>
+          <label for="sudahcari">Saya sudah mencoba mencari secara sistematis</label>
+        </p>
+
+        <p>
+          <button type="submit">Kirim Laporan</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Micro-Physics of Misplacement &ndash; Laporan Praktikum HTML5 Fundamentals dan Semantic Form.</p>
+    <p>Dibuat oleh: NIM_NAMA</p>
+  </footer>
+</body>
+</html>
